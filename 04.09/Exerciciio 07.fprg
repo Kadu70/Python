@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerciciio 06"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 05:22:23 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDQ6MjA6MzUgIjsyNTE5"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDU6MjI6MjMgIjszOzI2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero01, Numero02, Continua" type="Real" array="False" size=""/>
+            <assign variable="Continua" expression="1"/>
+            <while expression="Continua &lt;&gt;0">
+                <output expression="&quot;Entre com 2 Numeros Inteiros&quot;" newline="True"/>
+                <input variable="Numero01"/>
+                <input variable="Numero02"/>
+                <output expression="&quot;A Soma &#233; &quot; &amp; Numero01 + Numero02" newline="True"/>
+                <output expression="&quot;A Subtra&#231;&#227;o &#233; &quot; &amp; Numero01 - Numero02" newline="True"/>
+                <output expression="&quot;A Mutiplica&#231;&#227;o &#233; &quot; &amp; Numero01 * Numero02" newline="True"/>
+                <if expression="numero02 = 0">
+                    <then>
+                        <output expression="&quot;N&#227;o divide por 0&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;A Divis&#227;o &#233; &quot; &amp; Numero01 / Numero02" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Continua? (1 para sim, 0 para n&#227;o)&quot;" newline="True"/>
+                <input variable="Continua"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio04"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 05:14:09 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6NTE6MzIgIjsyNTE3"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDU6MTQ6MDkgIjsxOzI2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Raio" type="Real" array="False" size=""/>
+            <do expression="Raio &lt;=0">
+                <output expression="&quot;Entre com o Valor do Raio&quot;" newline="True"/>
+                <input variable="Raio"/>
+            </do>
+            <output expression="&quot;Valor do Raio &#233; &quot; &amp; Raio &amp; &quot; Valor do PI &#233; &quot; &amp; PI" newline="True"/>
+            <output expression="&quot;A Area do Circulo &#233; : &quot; &amp; (PI * Raio ^ 2 )" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

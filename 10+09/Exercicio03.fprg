@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio03"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 04:47:11 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6MjI6MzAgIjsyNTEz"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6NDc6MTEgIjszOzI2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, Cubo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com um Numero&quot;" newline="True"/>
+            <input variable="N1"/>
+            <comment text="Cubo = N1 * N1 * N1"/>
+            <assign variable="Cubo" expression="N1 ^ 3"/>
+            <output expression="&quot;O Valor de &quot; &amp; N1 &amp; &quot; elevado a 3, &#233; &quot; &amp; Cubo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio02"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 04:14:34 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDM6MDQ6NDIgIjsyNTE1"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6MTQ6MzQgIjs2OzI2MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome01, Nome02" type="String" array="False" size=""/>
+            <declare name="Idade01, Idade02" type="Integer" array="False" size=""/>
+            <assign variable="Nome01" expression="EntradaC (&quot;Entre com o Nome do Usuario01: &quot;)"/>
+            <assign variable="Idade01" expression="EntradaI (&quot;Entre com a Idade do Usuario01: &quot;)"/>
+            <assign variable="Nome02" expression="EntradaC (&quot;Entre com o Nome do Usuario02: &quot;)"/>
+            <assign variable="Idade02" expression="EntradaI (&quot;Entre com a Idade do Usuario02: &quot;)"/>
+            <call expression="Saida (&quot;O Nome do Usuario01 &#233; &quot; &amp; Nome01 &amp; &quot; e sua idade &#233; &quot; &amp; Idade01)"/>
+            <call expression="Saida (&quot;O Nome do Usuario02 &#233; &quot; &amp; Nome02 &amp; &quot; e sua idade &#233; &quot; &amp; Idade02)"/>
+            <call expression="Saida (&quot;A Soma da Idades &#233; &quot; &amp; (Idade01+Idade02))"/>
+        </body>
+    </function>
+    <function name="EntradaC" type="String" variable="Texto">
+        <parameters>
+            <parameter name="Pergunta" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Texto" type="String" array="False" size=""/>
+            <output expression="Pergunta" newline="True"/>
+            <input variable="Texto"/>
+        </body>
+    </function>
+    <function name="EntradaI" type="Integer" variable="Inteiro">
+        <parameters>
+            <parameter name="Pergunta" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Inteiro" type="Integer" array="False" size=""/>
+            <do expression="Inteiro &lt; 0 || Inteiro &gt;120">
+                <output expression="Pergunta" newline="True"/>
+                <input variable="Inteiro"/>
+            </do>
+        </body>
+    </function>
+    <function name="Saida" type="None" variable="">
+        <parameters>
+            <parameter name="Titulo" type="String" array="False"/>
+        </parameters>
+        <body>
+            <output expression="Titulo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

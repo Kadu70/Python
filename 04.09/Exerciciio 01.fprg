@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerciciio 01"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 02:44:50 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDE6Mzg6NDMgIjsyNTI0"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDI6NDQ6NTAgIjsxOzI2Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Palavra" type="String" array="False" size=""/>
+            <output expression="&quot;Digite uma Palavra!&quot;" newline="True"/>
+            <input variable="Palavra"/>
+            <output expression="&quot;A palavra digitada foi : &quot; &amp; Palavra" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerciciio 03"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 03:27:44 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDM6MTQ6MzMgIjsyNTE5"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDM6Mjc6NDQgIjsxOzI2MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero inteiro &quot;" newline="True"/>
+            <input variable="Numero"/>
+            <output expression="&quot;o numero digitado foi :&quot; &amp; Numero" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

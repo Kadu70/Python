@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerciciio 04"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 04:02:46 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDM6Mjg6NDUgIjsyNTI3"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDQ6MDI6NDYgIjsxOzI2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero" type="Integer" array="False" size=""/>
+            <assign variable="Numero" expression="1"/>
+            <while expression="Numero != 0">
+                <output expression="&quot;DIGITE UM NUMERO ( 0 para sair) &quot;" newline="True"/>
+                <input variable="Numero"/>
+                <output expression="&quot;Voce Digitou o numero : &quot; &amp; Numero" newline="True"/>
+            </while>
+            <output expression="&quot;Saindo&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

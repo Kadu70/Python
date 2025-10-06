@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio02"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 04:15:48 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDM6MDQ6NDIgIjsyNTE1"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6MTU6NDggIjs3OzI2Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome01, Nome02" type="String" array="False" size=""/>
+            <declare name="Idade01, Idade02, Continua" type="Integer" array="False" size=""/>
+            <do expression="Continua = 0">
+                <output expression="&quot;Entre com o Nome do Usuario01: &quot;" newline="True"/>
+                <input variable="Nome01"/>
+                <do expression="Idade01&lt;0 || Idade01 &gt;120">
+                    <output expression="&quot;Entre com a Idade do Usuario01: &quot;" newline="True"/>
+                    <input variable="Idade01"/>
+                </do>
+                <output expression="&quot;Entre com o Nome do Usuario02: &quot;" newline="True"/>
+                <input variable="Nome02"/>
+                <do expression="Idade02&lt;0 || idade02&gt;120">
+                    <output expression="&quot;Entre com a Idade do Usuario02: &quot;" newline="True"/>
+                    <input variable="Idade02"/>
+                </do>
+                <output expression="&quot;O Nome do Usuario01 &#233; &quot; &amp; Nome01 &amp; &quot; e sua idade &#233; &quot; &amp; Idade01" newline="True"/>
+                <output expression="&quot;O Nome do Usuario02 &#233; &quot; &amp; Nome02 &amp; &quot; e sua idade &#233; &quot; &amp; Idade02" newline="True"/>
+                <output expression="&quot;A Soma da Idades &#233; &quot; &amp; (Idade01+Idade02)" newline="True"/>
+                <output expression="&quot;Continua (0)&quot;" newline="True"/>
+                <input variable="Continua"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

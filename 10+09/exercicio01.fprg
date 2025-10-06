@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio01"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 02:59:20 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDE6NDU6MDggIjsyNTIw"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDI6NTk6MjAgIjsyOzI2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota, Media" type="Real" array="False" size=""/>
+            <declare name="Continua" type="Integer" array="False" size=""/>
+            <do expression="Continua = 0">
+                <declare name="N" type="Integer" array="False" size=""/>
+                <assign variable="Media" expression="0"/>
+                <assign variable="N" expression="1"/>
+                <while expression="N&lt;=3">
+                    <do expression="!(Nota &gt;=0 &amp;&amp; Nota &lt;=10)">
+                        <output expression="&quot;Digita a Nota &quot; &amp; N" newline="True"/>
+                        <input variable="Nota"/>
+                    </do>
+                    <assign variable="Media" expression="Media+Nota"/>
+                    <assign variable="N" expression="N+1"/>
+                </while>
+                <assign variable="Media" expression="Media/3"/>
+                <if expression="Media&gt;=7">
+                    <then>
+                        <output expression="&quot;Aprovado com nota: &quot; &amp; Media" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Reprovado com nota: &quot; &amp; Media" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Continua (0)&quot;" newline="True"/>
+                <input variable="Continua"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

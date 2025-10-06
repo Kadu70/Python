@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerciciio 06"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-04 04:24:05 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDQ6MjA6MzUgIjsyNTE5"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0wNDsiMDQ6MjQ6MDUgIjsxOzI2Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero01, Numero02, Soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com 2 Numeros Inteiros&quot;" newline="True"/>
+            <input variable="Numero01"/>
+            <input variable="Numero02"/>
+            <assign variable="Soma" expression="Numero01 + Numero02"/>
+            <output expression="&quot;A Soma entre &quot; &amp; numero01 &amp; &quot; e &quot; &amp; numero02 &amp; &quot; &#233; &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

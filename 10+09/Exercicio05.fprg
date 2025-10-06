@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio05"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-10 05:26:12 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDU6MTU6NDYgIjsyNTIz"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDU6MjY6MTIgIjsxOzI2MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Celso, Fahrenheit, Kelvin" type="Real" array="False" size=""/>
+            <do expression="Celso &lt; (-273.15)">
+                <output expression="&quot;Entre com a Temperatura em Celso&quot;" newline="True"/>
+                <input variable="Celso"/>
+            </do>
+            <assign variable="Fahrenheit" expression="(Celso * 1.8) + 32"/>
+            <assign variable="Kelvin" expression="Celso + 273.15"/>
+            <output expression="&quot;a Temperatura &quot; &amp; Celso &amp; &quot;C&#186; &#233; &quot; &amp; Fahrenheit &amp; &quot;&#186;F&quot;" newline="True"/>
+            <output expression="&quot;a Temperatura &quot; &amp; Celso &amp; &quot;C&#186; &#233; &quot; &amp; Kelvin &amp; &quot;&#186;K&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

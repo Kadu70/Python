@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio03"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-11 03:53:54 "/>
+        <attribute name="created" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMDsiMDQ6MjI6MzAgIjsyNTEz"/>
+        <attribute name="edited" value="QWx1bm87RVNOMTY0RDEzMTg0Mzg7MjAyNS0wOS0xMTsiMDM6NTM6NTQgIjs1OzI2MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, P1, Cubo, Contador, Continua" type="Integer" array="False" size=""/>
+            <while expression="true">
+                <assign variable="Cubo" expression="1"/>
+                <output expression="&quot;Entre com um Numero&quot;" newline="True"/>
+                <input variable="N1"/>
+                <do expression="P1&lt;=0">
+                    <output expression="&quot;Entre com a Potencia&quot;" newline="True"/>
+                    <input variable="P1"/>
+                </do>
+                <for variable="Contador" start="1" end="P1" direction="inc" step="1">
+                    <assign variable="Cubo" expression="Cubo * N1"/>
+                </for>
+                <output expression="&quot;O Valor de &quot; &amp; N1 &amp; &quot; elevado a &quot; &amp; P1 &amp; &quot;, &#233; &quot; &amp; Cubo" newline="True"/>
+                <output expression="&quot;Continua (0)?&quot;" newline="True"/>
+                <input variable="Continua"/>
+                <breakpoint expression="Continua == 0" always="False"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
