@@ -149,7 +149,7 @@ def main():
             for chave in Estoque:
                 print (f"{chave['Cod']:>3}    {chave['Descricao']:15} {chave['Qtde']:>6} {chave['Preco']:6.2f}") 
                 total = total + chave['Qtde']
-                preco = preco + chave['Preco']
+                preco = preco + (chave['Preco']*chave['Qtde'])
             print(f'Quantidade em estoque {total}, valor total R$ {preco:6.2f}')     
            
            
