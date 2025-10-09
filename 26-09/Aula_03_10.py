@@ -123,35 +123,101 @@ def main():
     # Biblioteca.Titulo('FIM')
     
   
-    Estoque=[]
-    total = 0
-    preco = 0.0
+    Estoque=[]#TABELA
+    total = 0 #TOTAIS DE ITENS
+    preco = 0.0 #PREÇO TOTAL
+    destintos = 0 #CONTA ITENS DESTINTOS
+    esp = 100 # LINHA DE DEVISA
 
-    Biblioteca.Titulo('Cadastro de Protudos')
+    #IMPRIMI TITULO PRE FORMATADO
+    Biblioteca.Titulo('Cadastro de Produtos')
+
+    #INICIO DE COMANDOS DE REPETIÇÃO INFINITO 
     while(True):
+        #TITULO
         Biblioteca.Titulo("MENU")
+
+        #CARREGA E RECEBE O VALOR DO MENU DE OPERAÇAO
         op = int(input( ('0 - Sair \n1 - Cadastrar \n2 - Imprimir\n ')))
+
+        #VERIFICA  QUAL A OPCAO ESCOLHIDA
+
+        #SE FOR ZERO
         if op==0:
             Biblioteca.Titulo( 'SAINDO')
-            break
+            break #SAIR DO SISTEMA
+
+        #SE FOR PARA INCLUSAO
         if op ==1:
+            
+            #IMPRIMI UMA LINHA COM A QTDE DE ESP
+            print('-'*esp) 
+
+            #TITULO
             Biblioteca.Titulo("CADASTRANDO")
+
+            #MAIS UMA LINHA
+            print('-'*esp) 
+
+            #CRIA O DICIONARIO PARA A LINHA ATUAL
             produto = {'Cod':0,'Descricao':' ' , 'Qtde': 0, 'Preco': 0.0}
+
+            #CARREGA OS VALORES NO DICIONARIO
             produto['Cod']= input('Digite a codigo do produto: ')
             produto['Descricao']= input('Digite a descrição do produto: ')
             produto['Qtde']= int (input('Digite a quantidade: '))
             produto['Preco']= float (input('Digite o preço: '))
+
+            #ADICIONA A LINHA DICIONARIO NA LISTA
             Estoque.append(produto)
+
+            #LINHA DE DIVISAO
+            print('-'*esp) 
+
+        #SE FOR 2 - AREA DE IMPRESSAO    
         if op ==2:
+
+            #TITULO
             Biblioteca.Titulo("RELATORIO")
-            print('Cod    descrição        saldo  preço')
-            # prod = {'Cod.':0,'Descricao':' ' , 'Qtde': 0, 'Preco': 0.0}
+
+            #CABEÇALHO DO RELATORIO
+            print('Cod  | descrição                         |    saldo   |    preço')
+
+            #LINHA DIVISORIA
+            print('-'*esp) 
+
+            #ZERANDO OS VALORES PARA O CALCULO DE QTDE, ITENS E PREÇOS TOTAIS
+            destintos = 0
+            total = 0
+            preco = 0.0
+
+            #FOR (AREA DE REPETIÇÃO), QUE PERCORE AS LINHAS
+            #ATRIBUINDO A VARIAVEL CHAVE O VALOR DA MESMA (DICIONARIO)
             for chave in Estoque:
-                print (f"{chave['Cod']:>3}    {chave['Descricao']:15} {chave['Qtde']:>6} {chave['Preco']:6.2f}") 
+
+                #IMPRIMI OS VALORES DA LINHA ATUAL
+                print (f"{chave['Cod']:>3}  |  {chave['Descricao']:<20}             | {chave['Qtde']:>6}     |   {chave['Preco']:>6.2f}") 
+
+                #SOMATORIA DA QTDE DE ITENS
                 total = total + chave['Qtde']
+
+                #SOMATORIO O PREÇO TOTAL DO ITEM
                 preco = preco + (chave['Preco']*chave['Qtde'])
-            print(f'Quantidade em estoque {total}, valor total R$ {preco:6.2f}')     
-           
+
+                #SOMATORIO DOS ITENS DESTINTOS
+                destintos = destintos + 1
+
+        #LINHA DIVISORIA   
+        print('-'*esp)  
+
+        #EXIBE OS VALORES TOTAIS  
+        print(f'Totais {destintos:>15}                   | {total:>6}     |R$ {preco:>6.2f}')   
+
+        #LINHA DIVISORIA
+        print('-'*esp)  
+
+        #CARREGA UM LINHA EM BRANCO 
+        print("") 
            
 if __name__ =="__main__":
     main()

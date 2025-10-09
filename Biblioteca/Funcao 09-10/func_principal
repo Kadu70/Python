@@ -1,0 +1,33 @@
+from func_biblioteca import soma, sub,mult,div, expo, imprimirResultado
+
+def main():
+    num1 = int(input("digite primeiro numero: "))
+    num2 = int(input("digite primeiro numero: "))
+    op = input ("Digite o operador ( +, -, /,*,**)")
+    if op =='+' or op =='-' or op =='/' or op =='*'or op =='**':
+        if op =='+':
+            resSoma = soma (num1, num2)
+        if op =='-':
+             resSub= sub (num1, num2)
+        if op =='*':
+            resMult = mult (num1, num2)    
+        if op =='/':
+            resDiv = div (num1, num2)    
+        if op =='**':
+            resExpo = expo (num1, num2)    
+               
+    else:
+        imprimirResultado ("opcao invalida")
+      
+
+    imprimirResultado (f"Valor da Soma = {resSoma} ")
+    imprimirResultado (f"Valor da Subtração = {resSub} ")
+    imprimirResultado (f"Valor da Multiplicacao = {resMult} ")
+    imprimirResultado (f"Valor da Divisao = {resDiv} ")
+    imprimirResultado (f"Valor da Exponeação = {resExpo} ")    
+
+
+
+if __name__ =="__main__":
+    main()
+
