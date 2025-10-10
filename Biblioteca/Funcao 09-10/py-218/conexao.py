@@ -1,0 +1,14 @@
+
+import sqlite3
+import os
+db_folder = '/workspaces/Python/Biblioteca/Funcao 09-10/py-218'
+db_file = 'clientes.db'
+db_path = os.path.join(db_folder,db_file)
+
+os.makedirs(db_folder, exist_ok=True)
+
+# conectando db
+conn = sqlite3.connect(db_path)
+
+# defini o cursor
+cursor = conn.cursor()

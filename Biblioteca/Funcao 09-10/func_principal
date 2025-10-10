@@ -1,30 +1,25 @@
 from func_biblioteca import soma, sub,mult,div, expo, imprimirResultado
 
 def main():
-    num1 = int(input("digite primeiro numero: "))
-    num2 = int(input("digite primeiro numero: "))
-    op = input ("Digite o operador ( +, -, /,*,**)")
-    if op =='+' or op =='-' or op =='/' or op =='*'or op =='**':
+    while (True):
+        num1 = int(input("digite primeiro numero: "))
+        num2 = int(input("digite primeiro numero: "))
+        op = input ("Digite o operador ( +, -, /,*,**)")
         if op =='+':
-            resSoma = soma (num1, num2)
-        if op =='-':
-             resSub= sub (num1, num2)
-        if op =='*':
-            resMult = mult (num1, num2)    
-        if op =='/':
-            resDiv = div (num1, num2)    
-        if op =='**':
-            resExpo = expo (num1, num2)    
-               
-    else:
-        imprimirResultado ("opcao invalida")
-      
-
-    imprimirResultado (f"Valor da Soma = {resSoma} ")
-    imprimirResultado (f"Valor da Subtração = {resSub} ")
-    imprimirResultado (f"Valor da Multiplicacao = {resMult} ")
-    imprimirResultado (f"Valor da Divisao = {resDiv} ")
-    imprimirResultado (f"Valor da Exponeação = {resExpo} ")    
+                res = soma (num1, num2)
+        elif op =='-':
+                res= sub (num1, num2)
+        elif op =='*':
+                res = mult (num1, num2)    
+        elif op =='/':
+                res = div (num1, num2)    
+        elif op =='**':
+                res = expo (num1, num2)    
+        else:
+                print ("opcao invalida")
+                break
+        
+        imprimirResultado (f"{num1} {op} {num2} = {res} ")    
 
 
 
