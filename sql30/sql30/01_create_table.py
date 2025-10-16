@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 # Definindo o caminho para o banco de dados
-db_folder = 'E:/01 Entidades de Ensino/01 HD_Senai/01 TURMAS/05 2025/08_BTA-PRPY-218_TARDE/mes_10/14_10.10/sql30'
+db_folder = 'https://github.com/Kadu70/Python/tree/main/sql30/sql30'
 db_file = 'clientes.db'
 db_path = os.path.join(db_folder, db_file)
 
@@ -37,3 +37,4 @@ CREATE TABLE clientes (
 print('Tabela criada com sucesso.')
 # desconectando
 conn.close()
+
